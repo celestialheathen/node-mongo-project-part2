@@ -7,7 +7,7 @@ mongo.connect(url, (err, db) => {
   var dbo = db.db('mydb')
   dbo.createCollection('pets', (err, res) => {
     if (err) throw err;
-    console.log('Pets collection created.')
+    console.log('Pets collection created...')
     db.close()
   })
 })
