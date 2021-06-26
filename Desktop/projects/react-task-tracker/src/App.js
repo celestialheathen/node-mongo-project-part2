@@ -1,8 +1,10 @@
+import Header from "./components/Header"
+
 function App() {
+
   return (
     <div className="container">
-      <h1>Hello From React Yay!</h1>
-      <h2>Hello</h2>
+      <Header title="Hell NOOO"/>
     </div>
   );
 }
