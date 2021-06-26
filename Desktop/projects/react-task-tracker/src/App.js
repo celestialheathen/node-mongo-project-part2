@@ -4,7 +4,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header title="Hell NOOO"/>
+      <Header title="Task Tracker"/>
     </div>
   );
 }
