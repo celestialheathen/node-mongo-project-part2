@@ -17,6 +17,12 @@
       "text": "Food Shopping",
       "day": "Feb 5th at 2:30pm",
       "reminder": false
+    },
+    {
+      "id": 4,
+      "text": "Gaming party with Ming and Thomas",
+      "day": "Jul 4th at 11am",
+      "reminder": false
     }
   ]
 }

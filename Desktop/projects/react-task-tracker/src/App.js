@@ -32,7 +32,13 @@ function App() {
   const addTask = (task) => {
     const id = tasks.length + 1
     const newTask = { id, ...task }
-    setTasks([...tasks, newTask])
+    fetch('http://localhost:3000/tasks', {
+      method: 'POST', 
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(newTask)
+    })
+     .then(res => res.json())
+     .then(data => setTasks([...tasks, data]))
   }
 
   return (
