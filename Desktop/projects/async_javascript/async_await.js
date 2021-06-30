@@ -24,3 +24,21 @@ function createPost(post) {
     }, 3000) 
   })
 }
+
+// async function init() {
+//   await createPost({ title: 'Post Three', body: 'This is post three.' })
+
+//   getPosts()
+// }
+
+// init()
+
+async function fetchUsers() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users')
+  
+  const data = await response.json()
+
+  console.log(data)
+}
+
+fetchUsers()
